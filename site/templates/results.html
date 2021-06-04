@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Quote Search</h2>
+
+{% for dict_item in results %}
+      <h1>Name: {{dict_item['name']}}</h1>
+      <h3>Quote: {{dict_item['quote']}}</h3>
+      <h2><a href="{{dict_item['url']}}"> LINK </a></h2>
+      <h3>Time: {{dict_item['time']}}</h3>
+{% endfor %}
+
+<a href="/">Return</a>
+
+<!--<button method='get' type="button" onclick="href={{url_for('index')}}">Вернуться к поиску</button>-->
+</body>
+</html>
